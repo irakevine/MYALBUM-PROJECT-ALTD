@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+
+
+
+</head>
+
+<body>
+
+    <h2>COLLECTIONS</h2>
+
+    <!-- Trigger/Open The Modal -->
+    <button id="myBtn">add collection</button>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form id="form-collection-here" onsubmit=" create_collection()" action="">
+                <div class="">
+
+                    <input type="text" id="name-control" placeholder="collection name" required>
+                    <input type="file" id="image-control" placeholder="collection image" accept="image/*" required>
+                    <button>save</button>
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+    <div id="collections" class="flex">
+
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
